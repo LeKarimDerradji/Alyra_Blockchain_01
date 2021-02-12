@@ -1,0 +1,44 @@
+Les commandes intéréssantes apprises : 
+
+1. Commande pwd
+
+La commande PWD s'utilise pour afficher le répertoire de travail (dossier) dans lequel l'utilisateur se trouve au moment ou
+la commande est entrée. PWD veut dire simplement "Print Working Directory", afficher le répertoire de travail. 
+Elle est utile pour se retrouver. Avec l'argument "-L" le résultat n'affichera pas de lien symbolique. 
+
+2. Commande cd 
+
+La commande CD sert à naviguer dans les différents répertoire de son ordinateur avec le terminal, elle est très versatile, elle prends en argument un "chemin" par exemple, si l'on se trouve dans home, et que le dossier "Projet, se trouve dans un dossier d'un dossier du répertoire homme, on peu taper
+"cd /home/dossier2/dossier2/Projet, on peut revenir au répertoire précédent avec "cd ..", au repertoire racine avec "cd /", ect.. ect..
+
+3. Commande ls
+
+Il est toujours intéréssant de lister les fichier quand on se trouve dans un répertoire, car l'on a pas de visuel graphique, on peut simplement donc
+taper "ls" dans le terminal, ce qui listera les fichiers et les dossiers, avec ls -a, on liste aussi les fichiers et dossier cachées, ils auront alors 
+un point "." devant le nom. "ls -R" affichera aussi les sous-fichiers dans les répertoires. "ls -al" affichera les fichiers et les répertoires avec des 
+informations détaillés comme les autorisations, la taille ect..
+
+4. Commande mkdir 
+
+Cette commande créer un répertoire dans le repertoire dans lequel on se trouve. On peut créer le nouveau dossier dans un autre repertoire en indiquant
+le chemin précis en argument après la commande. Pour créer un répertoire entre deux répertoires existant, on peut ajouter "-p" avant le chemin du 
+nouveau répertoire, exemple pour créer "Guitare" avant "Rock" dans "Musique" = mkdir -p /home/musique/guitare/rock 
+
+5. Commande touch 
+
+Cette commande sert à creer un fichier vierge dans le working directory, si l'on veut choisir un autre répertoire, taper le chemin en argument avant le nom du fichier, ex: touch /home/work/reports/report_01_01_2022.txt. avec l'argument "-a", on peut modifier les accès et le temps de modification, le fameux 
+"modifié le"
+
+6. Commande tail 
+
+Elle affiche les dernières lignes d'un fichier. Avec l'option "-n", tail n'affichera qu'un certain nombre de lignes 'tail -n 3" affichera les trois 
+dernières. 
+
+7. Commande sudo 
+
+C'est une des commandes les plus importante, elle permet d'effectuer des tâches en tant que super-utilisateur, afin de pouvoir modifier le système,
+installer des choses, en télécharger, administrer le système et utiliser des programmes qui ont accès à des données sensibles dans l'ordinateur. 
+En gros, d'avoir tout les droits administrateurs, mais seulement pour les commandes qui suivent la commande sudo, pour avoir tout le temps les droits
+on peut utiliser "su", on aura une shell avec root directement, (le super-utilisateur). 
+
+ 
