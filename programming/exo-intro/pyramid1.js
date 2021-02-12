@@ -1,12 +1,39 @@
-// Declaration variable avec tableau vide.
-let pyramid = []
+/*
+let basis = ''
 
-/* Boucle d'itération allant juqu'à 8, a chaque itération, ajouter un "*"
-au tableau et afficher le tableau, au bout de huit itération, le tableau aura
-8 caractères, vu qu'a chaque iteration, l'on a ajouter 8 '*'.
-
-*/
 for (i = 0; i < 8; i++) {
-  pyramid.push('*');
+  basis += '*';
   console.log(pyramid);
 }
+
+*/
+
+/*
+function displayPyramid(row) {
+  for (let i = 0; i < row; i++) {
+    let str = '';
+    for (let j = 1; j < row-i; j++) {
+      str = str + ' ';
+    }
+    for (let k = 1; k <= (2*i+1); k++) {
+      str = str + '*';
+    }
+    console.log(str);
+  }
+}
+
+displayPyramid(8);
+
+*/
+
+function pyramid(n) {
+
+  for(let i=1; i<= n; i++){
+    let str = ' '.repeat(n-i);
+    let str2 = '*'.repeat(i*2 -1)
+
+    console.log(str + str2 + str);
+  }
+}
+
+pyramid(8);
