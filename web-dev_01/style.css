@@ -1,0 +1,66 @@
+body {
+    background-color: blueviolet;
+    color: cornsilk;
+}
+
+main, header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.right {
+    width: 30%;
+}
+
+p {
+    font-size: 25px;
+}
+
+hr {
+    color: red;
+}
+
+img {
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+    background-color: ivory;
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    border-radius: 80%;
+}
+
+
+
+ @media only screen and (max-width: 360px){ 
+    .minified-img{
+      display: block;
+    }
+
+    .large-img {
+        display: none;
+    }
+
+ }
+
+ @media only screen and (min-width: 360px){ 
+    .minified-img{
+      display: none;
+    }
+
+    .large-img {
+        display: block;
+    }
+
+ }
