@@ -1,10 +1,9 @@
 {
-  "name": "exo-loop-iterations",
+  "name": "exo-functions",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0"
-  },
-  "description": "chalk-usage"
+  }
 }
