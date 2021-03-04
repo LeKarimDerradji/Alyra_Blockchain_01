@@ -6,9 +6,7 @@ isOdd = (num) => {
 
 let foreach = (func, array) => {
     let booleanTab = []
-    for (let i = 0; i < array.length; i++) {
-        booleanTab.push(func(array[i])) 
-    }
+    booleanTab = func(...array)
     return booleanTab.toString()
 }
 
