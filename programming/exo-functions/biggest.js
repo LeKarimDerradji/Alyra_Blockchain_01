@@ -18,3 +18,7 @@ let sortAscend  = (array) => {
 console.log(sortAscend([1, 3, 45, 11, 27, 39, 88, 13]))
 
 
+let makeUnique = (array) => {
+    
+}
+
