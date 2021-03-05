@@ -1,3 +1,5 @@
+
+
 let biggest = (array) => {
     let biggest = 0
     for (let i = 0; i < array.length; i++) {
@@ -9,7 +11,8 @@ let biggest = (array) => {
 console.log(biggest([1, 2, 101, 3, 4]))
 
 
-
+// Array.sort, prends tout les élements d'un array et les trie selon un ordre 
+// défini dans les paramètre de la méthode. 
 
 let sortAscend  = (array) => {
     return array = array.sort((a, b) => a - b);
@@ -17,8 +20,16 @@ let sortAscend  = (array) => {
 
 console.log(sortAscend([1, 3, 45, 11, 27, 39, 88, 13]))
 
+// Set est un objet qui prends en compte seulement des valeurs uniques.
 
 let makeUnique = (array) => {
-    
+    let arrayClean = [...new Set(array)]
+    return arrayClean
 }
+
+console.log(makeUnique([1, 2, 3, 2, 3, 2, 3]))
+
+console.log(makeUnique('Abracadabra'))
+
+
 
