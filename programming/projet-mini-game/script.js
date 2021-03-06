@@ -64,7 +64,6 @@ function drawBall() {
 
 // fonction qui dessine dans tout le canvas, la balle et son "comportement"
 
-let canva = document.getElementById('myCanvas')
 
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
@@ -93,7 +92,7 @@ function draw() {
         } else {
             paddleWidth = Math.max(5, paddleWidth - 10)
             dy = -dy
-            canva.style.background = getRandomColor()
+            canvas.style.background = getRandomColor()
         }
     }
     x += dx

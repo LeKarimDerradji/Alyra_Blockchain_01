@@ -23,8 +23,7 @@ console.log(sortAscend([1, 3, 45, 11, 27, 39, 88, 13]))
 // Set est un objet qui prends en compte seulement des valeurs uniques.
 
 let makeUnique = (array) => {
-    let arrayClean = [...new Set(array)]
-    return arrayClean
+    return arrayClean = [...new Set(array)]
 }
 
 console.log(makeUnique([1, 2, 3, 2, 3, 2, 3]))
